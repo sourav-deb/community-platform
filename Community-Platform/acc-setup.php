@@ -64,22 +64,22 @@ while ($res = mysqli_fetch_assoc($result))
 
                             <div class="form-group">
                                 <label for="username" class="text-info">Email:</label><br>
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" value="<?php echo $res['email']; ?>"  required >
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" value="<?php echo $res['email']; ?>" readonly required >
                             </div>
 
                             <div class="form-group">
                                 <label for="Name" class="text-info">Name:</label><br>
-                                <input type="text" name="name" id="name" class="form-control"  placeholder="Enter Your Name" value="<?php echo $res['name']; ?>"  required>
+                                <input type="text" name="name" id="name" class="form-control"  placeholder="Enter Your Name" value="<?php echo $res['name']; ?>" readonly required>
                             </div>
 
                             <div class="form-group">
                                 <label for="UserName" class="text-info">UserName:</label><br>
-                                <input type="text" name="uname" id="uname" class="form-control"  placeholder="Enter Your UserName" value="<?php echo $res['uname']; ?>"  required>
+                                <input type="text" name="uname" id="uname" class="form-control"  placeholder="Enter Your UserName" value="<?php echo $res['uname']; ?>" readonly required>
                             </div>
 
                             <div class="form-group">
                                 <label for="Community" class="text-info">Community:</label><br>
-                                <input type="text" name="community" id="community" class="form-control"  placeholder="Enter Your Community" value="<?php echo $res['community']; ?>"  required>
+                                <input type="text" name="community" id="community" class="form-control"  placeholder="Enter Your Community" value="<?php echo $res['community']; ?>" readonly required>
                             </div>
 
                             <?php
@@ -113,6 +113,13 @@ while ($res = mysqli_fetch_assoc($result))
             </div>
         </div>
     </div>
+
+    <!-- <script>
+        document.getElementById("email").disabled = true;
+        document.getElementById("name").disabled = true;
+        document.getElementById("community").disabled = true;
+        document.getElementById("uname").disabled = true;
+    </script> -->
 
     
 
